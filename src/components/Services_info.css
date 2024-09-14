@@ -1,0 +1,89 @@
+.services-container {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .services-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .services-description {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 50px;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .service-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .service-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .service-item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    background-color: #4ecdc4;
+    border-radius: 50%;
+  }
+  
+  .icon-strategy::before {
+    content: '💡';
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  
+  .icon-branding::before {
+    content: '📢';
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  
+  .icon-development::before {
+    content: '💻';
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  
+  .icon-web-design::before {
+    content: '🎨';
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  
+  .icon-social-media::before {
+    content: '🔗';
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  
+  .icon-ecommerce::before {
+    content: '🛒';
+    display: block;
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  

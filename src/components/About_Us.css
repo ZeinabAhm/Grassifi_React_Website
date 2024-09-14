@@ -1,0 +1,71 @@
+.about-container {
+  display: flex;
+  justify-content: space-between; /* Space between each item */
+  align-items: flex-start;
+  padding: 40px;
+  flex-wrap: wrap; /* Allows items to wrap if screen size is small */
+}
+
+.about-item {
+  flex: 1;
+  max-width: 23%; /* Adjust width for each item (4 items) */
+  margin: 10px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Add smooth hover effect */
+}
+
+.about-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.about-item img {
+  width: 100%; /* Image takes full width of the box */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.about-item h2 {
+  background-color: #358d53;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.about-item p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #333;
+  text-align: justify;
+}
+
+/* Add responsiveness with media queries */
+@media (max-width: 1024px) {
+  .about-item {
+    max-width: 48%; /* Two items per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-item {
+    max-width: 100%; /* One item per row on small screens */
+  }
+
+  .about-container {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .about-item p {
+    font-size: 1rem; /* Slightly reduce font size on very small screens */
+  }
+
+  .about-container {
+    padding: 10px; /* Further reduce padding for very small screens */
+  }
+}
